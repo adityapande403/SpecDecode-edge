@@ -1,0 +1,23 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Large model binaries and tensor checkpoints (Hosted on Hugging Face Hub)
+*.safetensors
+*.pt
+*.bin
+*.pth
+checkpoints/
+data/trajectories/*.pt
+
+# OS files
+.DS_Store
+Thumbs.db

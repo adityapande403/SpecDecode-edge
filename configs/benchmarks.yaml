@@ -1,0 +1,23 @@
+# Benchmark configuration for SpecDecode Edge
+target_model:
+  model_id: "Qwen/Qwen2.5-1.5B-Instruct"
+  torch_dtype: "bfloat16"
+  device: "cuda:0"
+  attn_implementation: "sdpa"
+
+benchmarking:
+  warmup_runs: 2
+  measured_runs: 3
+  sampling:
+    do_sample: false
+    temperature: 0.0
+
+workloads:
+  - "General QA"
+  - "Code Generation"
+  - "Mathematical Reasoning"
+  - "Structured Output"
+  - "Technical Explanations"
+  - "Short Interactive"
+  - "Instruction Following"
+  - "Long Context"

@@ -1,0 +1,88 @@
+{
+  "os": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "system": "Windows",
+    "release": "10",
+    "version": "10.0.26300",
+    "architecture": "AMD64",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "python": {
+    "version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\Aditya\\hf5\\.venv\\Scripts\\python.exe",
+    "prefix": "D:\\Aditya\\hf5\\.venv"
+  },
+  "memory": {
+    "total_gb": 127.77,
+    "available_gb": 104.55,
+    "used_gb": 23.22,
+    "percent_used": 18.2
+  },
+  "storage": {
+    "drive_c": {
+      "total_gb": 340.96,
+      "free_gb": 14.76
+    },
+    "drive_d": {
+      "total_gb": 588.94,
+      "free_gb": 303.52
+    }
+  },
+  "gpu": {
+    "cuda_available": true,
+    "torch_version": "2.11.0+cu128",
+    "torch_cuda_version": "12.8",
+    "device_count": 1,
+    "device_name": "NVIDIA GeForce RTX 5060 Ti",
+    "total_vram_gb": 15.93,
+    "major_capability": 12,
+    "minor_capability": 0,
+    "compute_capability": "sm_120",
+    "supported_arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "nvidia_driver": "610.88"
+  },
+  "tooling": {
+    "nvcc": {
+      "found": true,
+      "path": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.1\\bin\\nvcc.EXE",
+      "version": "nvcc: NVIDIA (R) Cuda compiler driver"
+    },
+    "cl": {
+      "found": false,
+      "path": null
+    },
+    "git": {
+      "found": true,
+      "path": "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "version": "git version 2.49.0.windows.1"
+    }
+  },
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.20.2",
+    "accelerate": "1.15.0",
+    "safetensors": "0.8.0",
+    "datasets": "5.1.0",
+    "numpy": "2.2.6",
+    "yaml": "6.0.3",
+    "tqdm": "4.70.1",
+    "pytest": "9.1.1",
+    "rich": "Installed"
+  },
+  "hf_cached_models": [
+    "distilbert-base-multilingual-cased",
+    "distilbert-base-uncased-finetuned-sst-2-english",
+    "facebook/bart-large-mnli",
+    "OBLITERATUS/Mistral-7B-v0.3-OBLITERATED",
+    "Qwen/Qwen2.5-1.5B-Instruct",
+    "sentence-transformers/all-MiniLM-L6-v2",
+    "SupersonicLabs/Julia-1"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "target_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "total_test_cases": 8,
+  "all_passed": false,
+  "passed_count": 6,
+  "failed_count": 2,
+  "results": [
+    {
+      "id": "qa_01",
+      "category": "General QA",
+      "prompt": "Explain the difference between a process and a thread in modern operating systems.",
+      "baseline_token_count": 64,
+      "speculative_token_count": 64,
+      "exact_token_match": true,
+      "length_match": true,
+      "first_mismatch_idx": null,
+      "speculative_steps": 58,
+      "mean_accepted_per_step": 1.09,
+      "generated_text_sample": " In modern operating systems, a process is a program that is currently executing, while a thread is a sequence of instru..."
+    },
+    {
+      "id": "code_01",
+      "category": "Code Generation",
+      "prompt": "Write a Python function to compute the longest increasing subsequence in an array with O(N log N) complexity.",
+      "baseline_token_count": 80,
+      "speculative_token_count": 80,
+      "exact_token_match": true,
+      "length_match": true,
+      "first_mismatch_idx": null,
+      "speculative_steps": 69,
+      "mean_accepted_per_step": 1.14,
+      "generated_text_sample": " The function should take an array of integers as input and return the length of the longest increasing subsequence. The..."
+    },
+    {
+      "id": "math_01",
+      "category": "Mathematical Reasoning",
+      "prompt": "Solve the system of equations step by step: 3x + 2y = 12 and 5x - y = 7.",
+      "baseline_token_count": 64,
+      "speculative_token_count": 64,
+      "exact_token_match": false,
+      "length_match": true,
+      "first_mismatch_idx": 55,
+      "speculative_steps": 56,
+      "mean_accepted_per_step": 1.12,
+      "generated_text_sample": " To solve the system of equations step by step, we start with the given equations:\n\n1. \\(3x + 2y = 12\\)\n2. \\(5x - y = 7\\..."
+    },
+    {
+      "id": "structured_01",
+      "category": "Structured Output",
+      "prompt": "Generate a JSON object describing an edge IoT sensor cluster with fields for cluster_id, nodes, telemetry_metrics, and status.",
+      "baseline_token_count": 70,
+      "speculative_token_count": 70,
+      "exact_token_match": true,
+      "length_match": true,
+      "first_mismatch_idx": null,
+      "speculative_steps": 66,
+      "mean_accepted_per_step": 1.05,
+      "generated_text_sample": " The cluster_id should be a unique identifier for the cluster, nodes should be an array of node objects, telemetry_metri..."
+    },
+    {
+      "id": "technical_01",
+      "category": "Technical Explanations",
+      "prompt": "Explain how KV cache works in transformer inference and why memory bandwidth is the primary bottleneck during decoding.",
+      "baseline_token_count": 80,
+      "speculative_token_count": 80,
+      "exact_token_match": true,
+      "length_match": true,
+      "first_mismatch_idx": null,
+      "speculative_steps": 75,
+      "mean_accepted_per_step": 1.05,
+      "generated_text_sample": " KV cache is a technique used in transformer models to improve inference performance by caching the key-value pairs of t..."
+    },
+    {
+      "id": "short_01",
+      "category": "Short Interactive",
+      "prompt": "What is the capital of Australia?",
+      "baseline_token_count": 20,
+      "speculative_token_count": 20,
+      "exact_token_match": true,
+      "length_match": true,
+      "first_mismatch_idx": null,
+      "speculative_steps": 19,
+      "mean_accepted_per_step": 1.0,
+      "generated_text_sample": " The capital of Australia is Canberra. It was established in 1908 as the capital of..."
+    },
+    {
+      "id": "instruction_01",
+      "category": "Instruction Following",
+      "prompt": "List five concrete strategies to reduce latency in real-time inference systems, ordered by ease of implementation.",
+      "baseline_token_count": 80,
+      "speculative_token_count": 80,
+      "exact_token_match": false,
+      "length_match": true,
+      "first_mismatch_idx": 17,
+      "speculative_steps": 76,
+      "mean_accepted_per_step": 1.04,
+      "generated_text_sample": " 1. **Optimize Model Architecture**: Start by simplifying the model architecture. Reduce the number of layers, parameter..."
+    },
+    {
+      "id": "long_context_01",
+      "category": "Long Context",
+      "prompt": "Context: In computing, a cache is a hardware or software component that stores data so that future requests for that data can be served faster. The data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere. A cache hit occurs when the requested data can be found in a cache, while a cache miss occurs when it cannot. Cache hits are served by reading data from the cache, which is faster than recomputing a result or reading from a slower data store; thus, the more requests that can be served from the cache, the faster the system performs. To be cost-effective and to enable efficient use of data, caches must be relatively small. Nevertheless, caches have proven effective in many areas of computing, because typical computer applications access data with a high degree of locality of reference. Such access patterns exhibit temporal locality, where data is requested again soon after being requested, and spatial locality, where data located physically close to previously requested data is requested.\n\nQuestion: Based on the provided text, distinguish temporal locality from spatial locality and explain why caches remain small.",
+      "baseline_token_count": 75,
+      "speculative_token_count": 75,
+      "exact_token_match": true,
+      "length_match": true,
+      "first_mismatch_idx": null,
+      "speculative_steps": 71,
+      "mean_accepted_per_step": 1.04,
+      "generated_text_sample": " Temporal locality refers to the fact that data is requested again soon after being requested, while spatial locality re..."
+    }
+  ]
+}

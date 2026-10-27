@@ -1,0 +1,41 @@
+{
+  "dataset_name": "specdecode_edge_trajectories_v1",
+  "target_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "total_prompts": 28,
+  "total_trajectories": 28,
+  "total_tokens": 2821,
+  "train_samples": 22,
+  "val_samples": 6,
+  "total_storage_mb": 8.33,
+  "extraction_duration_seconds": 0.92,
+  "chunks": [
+    {
+      "chunk_file": "train_chunk_0000.pt",
+      "num_samples": 10,
+      "num_tokens": 993,
+      "file_size_bytes": 3075277,
+      "sha256_checksum": "f7742d1c564d1130eb429484f5d111c9de7e36fc0c347c9267d387f79fa1971c"
+    },
+    {
+      "chunk_file": "train_chunk_0001.pt",
+      "num_samples": 10,
+      "num_tokens": 1024,
+      "file_size_bytes": 3170893,
+      "sha256_checksum": "d36dde1e9bca4eb3a908e84c641b35cf6d12967511146979125e73d00ed243c3"
+    },
+    {
+      "chunk_file": "train_chunk_0002.pt",
+      "num_samples": 2,
+      "num_tokens": 202,
+      "file_size_bytes": 626625,
+      "sha256_checksum": "6e40160da51fa8c1314d49d879ad9152ab65346c8942338fb664c0432d099f17"
+    },
+    {
+      "chunk_file": "val_chunk_0000.pt",
+      "num_samples": 6,
+      "num_tokens": 602,
+      "file_size_bytes": 1864597,
+      "sha256_checksum": "84b3908d489c97f47868d15460162763663e8089505500e5bce992e378880b8c"
+    }
+  ]
+}

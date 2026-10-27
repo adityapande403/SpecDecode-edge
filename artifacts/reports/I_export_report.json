@@ -1,0 +1,25 @@
+{
+  "huggingface_safetensors": {
+    "status": "SUPPORTED",
+    "format": "safetensors",
+    "path": "artifacts/exported_models/medusa_qwen2.5_1.5b\\medusa_heads.safetensors",
+    "size_mb": 2697.75,
+    "notes": "Directly loadable in PyTorch / HuggingFace speculative workflows."
+  },
+  "vllm_speculative": {
+    "status": "SUPPORTED",
+    "format": "vLLM Medusa Worker checkpoint",
+    "path": "artifacts/exported_models/medusa_qwen2.5_1.5b",
+    "notes": "Compatible with vLLM Medusa speculative engine via `--speculative-model`."
+  },
+  "llama_cpp_gguf": {
+    "status": "UNSUPPORTED_ARCH_LIMITATION",
+    "format": "GGUF draft model",
+    "blocker": "llama.cpp's `--model-draft` natively requires a standalone CausalLM architecture with complete transformer blocks. Medusa multi-head auxiliary projection heads on frozen base hidden states require specialized GGUF quantization tensor mappings (`medusa.0.weight`) not present in standard GGUF conversion scripts. Native llama-speculative currently prioritizes separate SLM draft models."
+  },
+  "ollama": {
+    "status": "UNSUPPORTED_RUNTIME_LIMITATION",
+    "format": "Modelfile / Ollama draft",
+    "blocker": "Ollama does not expose a native multi-head Medusa speculative decoding endpoint as of current stable releases. Serving Medusa requires vLLM or our dedicated high-throughput PyTorch runtime."
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "summary": {
+    "target_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dtype": "bfloat16",
+    "device": "cuda:0",
+    "total_prompts": 8,
+    "measured_runs_per_prompt": 3,
+    "median_decode_tokens_per_sec": 40.14,
+    "mean_decode_tokens_per_sec": 39.86,
+    "median_ttft_ms": 29.7,
+    "peak_vram_gb": 2.957
+  },
+  "results_per_prompt": [
+    {
+      "id": "qa_01",
+      "category": "General QA",
+      "prompt": "Explain the difference between a process and a thread in modern operating systems.",
+      "prompt_tokens": 15,
+      "generated_tokens": 64,
+      "median_ttft_ms": 29.84,
+      "median_decode_ms": 1563.23,
+      "median_total_ms": 1593.27,
+      "median_tokens_per_sec": 40.17,
+      "median_decode_tokens_per_sec": 40.3,
+      "peak_vram_gb": 2.889,
+      "runs": [
+        {
+          "num_generated_tokens": 64,
+          "prompt_tokens": 15,
+          "ttft_ms": 29.837800015229732,
+          "decode_latency_ms": 1536.1689000274055,
+          "total_latency_ms": 1566.2079000030644,
+          "tokens_per_second": 40.863029742012394,
+          "decode_tokens_per_second": 41.01111537857333,
+          "peak_vram_gb": 2.889308452606201
+        },
+        {
+          "num_generated_tokens": 64,
+          "prompt_tokens": 15,
+          "ttft_ms": 29.859599948395044,
+          "decode_latency_ms": 1563.2273000082932,
+          "total_latency_ms": 1593.268500000704,
+          "tokens_per_second": 40.16899850839436,
+          "decode_tokens_per_second": 40.30124090058162,
+          "peak_vram_gb": 2.889308452606201
+        },
+        {
+          "num_generated_tokens": 64,
+          "prompt_tokens": 15,
+          "ttft_ms": 28.860599966719747,
+          "decode_latency_ms": 1650.8311000070535,
+          "total_latency_ms": 1679.930099984631,
+          "tokens_per_second": 38.096823195551714,
+          "decode_tokens_per_second": 38.16259579779592,
+          "peak_vram_gb": 2.889308452606201
+        }
+      ]
+    },
+    {
+      "id": "code_01",
+      "category": "Code Generation",
+      "prompt": "Write a Python function to compute the longest increasing subsequence in an array with O(N log N) complexity.",
+      "prompt_tokens": 22,
+      "generated_tokens": 80,
+      "median_ttft_ms": 29.09,
+      "median_decode_ms": 1975.41,
+      "median_total_ms": 2004.67,
+      "median_tokens_per_sec": 39.91,
+      "median_decode_tokens_per_sec": 39.99,
+      "peak_vram_gb": 2.892,
+      "runs": [
+        {
+          "num_generated_tokens": 80,
+          "prompt_tokens": 22,
+          "ttft_ms": 51.5737000387162,
+          "decode_latency_ms": 2008.6697999504395,
+          "total_latency_ms": 2060.4766000178643,
+          "tokens_per_second": 38.82596871000933,
+          "decode_tokens_per_second": 39.329510505882645,
+          "peak_vram_gb": 2.8916101455688477
+        },
+        {
+          "num_generated_tokens": 80,
+          "prompt_tokens": 22,
+          "ttft_ms": 29.08990002470091,
+          "decode_latency_ms": 1975.406399986241,
+          "total_latency_ms": 2004.6747000305913,
+          "tokens_per_second": 39.906724018006116,
+          "decode_tokens_per_second": 39.9917708075413,
+          "peak_vram_gb": 2.8916101455688477
+        },
+        {
+          "num_generated_tokens": 80,
+          "prompt_tokens": 22,
+          "ttft_ms": 28.715600026771426,
+          "decode_latency_ms": 1930.7352000032552,
+          "total_latency_ms": 1959.6617000061087,
+          "tokens_per_second": 40.82337272793086,
+          "decode_tokens_per_second": 40.91705584477188,
+          "peak_vram_gb": 2.8916101455688477
+        }
+      ]
+    },
+    {
+      "id": "math_01",
+      "category": "Mathematical Reasoning",
+      "prompt": "Solve the system of equations step by step: 3x + 2y = 12 and 5x - y = 7.",
+      "prompt_tokens": 31,
+      "generated_tokens": 64,
+      "median_ttft_ms": 30.52,
+      "median_decode_ms": 1559.01,
+      "median_total_ms": 1588.98,
+      "median_tokens_per_sec": 40.28,
+      "median_decode_tokens_per_sec": 40.41,
+      "peak_vram_gb": 2.895,
+      "runs": [
+        {
+          "num_generated_tokens": 64,
+          "prompt_tokens": 31,
+          "ttft_ms": 33.145800000056624,
+          "decode_latency_ms": 1551.1778999934904,
+          "total_latency_ms": 1584.5786000136286,
+          "tokens_per_second": 40.389287094656936,
+          "decode_tokens_per_second": 40.614297045016166,
+          "peak_vram_gb": 2.8945693969726562
+        },
+        {
+          "num_generated_tokens": 64,
+          "prompt_tokens": 31,
+          "ttft_ms": 29.77120003197342,
+          "decode_latency_ms": 1559.0115999802947,
+          "total_latency_ms": 1588.9808000065386,
+          "tokens_per_second": 40.277390387433655,
+          "decode_tokens_per_second": 40.4102188853478,
+          "peak_vram_gb": 2.8945693969726562
+        },
+        {
+          "num_generated_tokens": 64,
+          "prompt_tokens": 31,
+          "ttft_ms": 30.520199972670525,
+          "decode_latency_ms": 1602.080799988471,
+          "total_latency_ms": 1632.7794999815524,
+          "tokens_per_second": 39.196964440528,
+          "decode_tokens_per_second": 39.323859321236085,
+          "peak_vram_gb": 2.8945693969726562
+        }
+      ]
+    },
+    {
+      "id": "structured_01",
+      "category": "Structured Output",
+      "prompt": "Generate a JSON object describing an edge IoT sensor cluster with fields for cluster_id, nodes, telemetry_metrics, and status.",
+      "prompt_tokens": 24,
+      "generated_tokens": 70,
+      "median_ttft_ms": 29.82,
+      "median_decode_ms": 1758.88,
+      "median_total_ms": 1791.19,
+      "median_tokens_per_sec": 39.08,
+      "median_decode_tokens_per_sec": 39.23,
+      "peak_vram_gb": 2.892,
+      "runs": [
+        {
+          "num_generated_tokens": 70,
+          "prompt_tokens": 24,
+          "ttft_ms": 29.8215999500826,
+          "decode_latency_ms": 1774.931900028605,
+          "total_latency_ms": 1804.949699959252,
+          "tokens_per_second": 38.782244181973766,
+          "decode_tokens_per_second": 38.87473091158483,
+          "peak_vram_gb": 2.8922677040100098
+        },
+        {
+          "num_generated_tokens": 70,
+          "prompt_tokens": 24,
+          "ttft_ms": 32.08889998495579,
+          "decode_latency_ms": 1758.8804000406526,
+          "total_latency_ms": 1791.190700023435,
+          "tokens_per_second": 39.080149310223725,
+          "decode_tokens_per_second": 39.22950076560363,
+          "peak_vram_gb": 2.8922677040100098
+        },
+        {
+          "num_generated_tokens": 70,
+          "prompt_tokens": 24,
+          "ttft_ms": 28.637399955186993,
+          "decode_latency_ms": 1682.6849000062793,
+          "total_latency_ms": 1711.555199988652,
+          "tokens_per_second": 40.89847642685677,
+          "decode_tokens_per_second": 41.00589480522616,
+          "peak_vram_gb": 2.8922677040100098
+        }
+      ]
+    },
+    {
+      "id": "technical_01",
+      "category": "Technical Explanations",
+      "prompt": "Explain how KV cache works in transformer inference and why memory bandwidth is the primary bottleneck during decoding.",
+      "prompt_tokens": 20,
+      "generated_tokens": 80,
+      "median_ttft_ms": 29.23,
+      "median_decode_ms": 2044.71,
+      "median_total_ms": 2074.12,
+      "median_tokens_per_sec": 38.57,
+      "median_decode_tokens_per_sec": 38.64,
+      "peak_vram_gb": 2.891,
+      "runs": [
+        {
+          "num_generated_tokens": 80,
+          "prompt_tokens": 20,
+          "ttft_ms": 29.347200004849583,
+          "decode_latency_ms": 1991.0985000315122,
+          "total_latency_ms": 2020.653499988839,
+          "tokens_per_second": 39.591152070576115,
+          "decode_tokens_per_second": 39.67659058492069,
+          "peak_vram_gb": 2.8909521102905273
+        },
+        {
+          "num_generated_tokens": 80,
+          "prompt_tokens": 20,
+          "ttft_ms": 29.025199997704476,
+          "decode_latency_ms": 2110.452199995052,
+          "total_latency_ms": 2139.680300024338,
+          "tokens_per_second": 37.38876317134388,
+          "decode_tokens_per_second": 37.43273597960911,
+          "peak_vram_gb": 2.8909521102905273
+        },
+        {
+          "num_generated_tokens": 80,
+          "prompt_tokens": 20,
+          "ttft_ms": 29.225200007203966,
+          "decode_latency_ms": 2044.7091000387445,
+          "total_latency_ms": 2074.1236000321805,
+          "tokens_per_second": 38.57050756221027,
+          "decode_tokens_per_second": 38.63630283569582,
+          "peak_vram_gb": 2.8909521102905273
+        }
+      ]
+    },
+    {
+      "id": "short_01",
+      "category": "Short Interactive",
+      "prompt": "What is the capital of Australia?",
+      "prompt_tokens": 7,
+      "generated_tokens": 20,
+      "median_ttft_ms": 29.22,
+      "median_decode_ms": 484.02,
+      "median_total_ms": 522.9,
+      "median_tokens_per_sec": 38.25,
+      "median_decode_tokens_per_sec": 39.25,
+      "peak_vram_gb": 2.887,
+      "runs": [
+        {
+          "num_generated_tokens": 20,
+          "prompt_tokens": 7,
+          "ttft_ms": 29.216900002211332,
+          "decode_latency_ms": 484.02079998049885,
+          "total_latency_ms": 513.4963000309654,
+          "tokens_per_second": 38.94867401925572,
+          "decode_tokens_per_second": 39.25451137795216,
+          "peak_vram_gb": 2.886786460876465
+        },
+        {
+          "num_generated_tokens": 20,
+          "prompt_tokens": 7,
+          "ttft_ms": 27.947800001129508,
+          "decode_latency_ms": 514.0054000075907,
+          "total_latency_ms": 542.1328999800608,
+          "tokens_per_second": 36.89132314370809,
+          "decode_tokens_per_second": 36.964592200236446,
+          "peak_vram_gb": 2.886786460876465
+        },
+        {
+          "num_generated_tokens": 20,
+          "prompt_tokens": 7,
+          "ttft_ms": 43.992399994749576,
+          "decode_latency_ms": 478.71420002775267,
+          "total_latency_ms": 522.898500028532,
+          "tokens_per_second": 38.248340737081286,
+          "decode_tokens_per_second": 39.689651986296845,
+          "peak_vram_gb": 2.886786460876465
+        }
+      ]
+    },
+    {
+      "id": "instruction_01",
+      "category": "Instruction Following",
+      "prompt": "List five concrete strategies to reduce latency in real-time inference systems, ordered by ease of implementation.",
+      "prompt_tokens": 19,
+      "generated_tokens": 80,
+      "median_ttft_ms": 29.57,
+      "median_decode_ms": 1956.78,
+      "median_total_ms": 1985.59,
+      "median_tokens_per_sec": 40.29,
+      "median_decode_tokens_per_sec": 40.37,
+      "peak_vram_gb": 2.891,
+      "runs": [
+        {
+          "num_generated_tokens": 80,
+          "prompt_tokens": 19,
+          "ttft_ms": 32.64099999796599,
+          "decode_latency_ms": 2072.922999970615,
+          "total_latency_ms": 2105.775900010485,
+          "tokens_per_second": 37.99074725833915,
+          "decode_tokens_per_second": 38.11043632644333,
+          "peak_vram_gb": 2.8906235694885254
+        },
+        {
+          "num_generated_tokens": 80,
+          "prompt_tokens": 19,
+          "ttft_ms": 29.570500017143786,
+          "decode_latency_ms": 1902.7554000495002,
+          "total_latency_ms": 1932.51600000076,
+          "tokens_per_second": 41.39681120361671,
+          "decode_tokens_per_second": 41.518736458687655,
+          "peak_vram_gb": 2.8906235694885254
+        },
+        {
+          "num_generated_tokens": 80,
+          "prompt_tokens": 19,
+          "ttft_ms": 28.61139999004081,
+          "decode_latency_ms": 1956.7829999723472,
+          "total_latency_ms": 1985.5901999981143,
+          "tokens_per_second": 40.290287492391926,
+          "decode_tokens_per_second": 40.37238671897518,
+          "peak_vram_gb": 2.8906235694885254
+        }
+      ]
+    },
+    {
+      "id": "long_context_01",
+      "category": "Long Context",
+      "prompt": "Context: In computing, a cache is a hardware or software component that stores data so that future requests for that data can be served faster. The data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere. A cache hit occurs when the requested data can be found in a cache, while a cache miss occurs when it cannot. Cache hits are served by reading data from the cache, which is faster than recomputing a result or reading from a slower data store; thus, the more requests that can be served from the cache, the faster the system performs. To be cost-effective and to enable efficient use of data, caches must be relatively small. Nevertheless, caches have proven effective in many areas of computing, because typical computer applications access data with a high degree of locality of reference. Such access patterns exhibit temporal locality, where data is requested again soon after being requested, and spatial locality, where data located physically close to previously requested data is requested.\n\nQuestion: Based on the provided text, distinguish temporal locality from spatial locality and explain why caches remain small.",
+      "prompt_tokens": 220,
+      "generated_tokens": 75,
+      "median_ttft_ms": 31.19,
+      "median_decode_ms": 1816.66,
+      "median_total_ms": 1848.19,
+      "median_tokens_per_sec": 40.58,
+      "median_decode_tokens_per_sec": 40.73,
+      "peak_vram_gb": 2.957,
+      "runs": [
+        {
+          "num_generated_tokens": 75,
+          "prompt_tokens": 220,
+          "ttft_ms": 38.49830001126975,
+          "decode_latency_ms": 1855.3195999702439,
+          "total_latency_ms": 1894.1089999862015,
+          "tokens_per_second": 39.59645405863463,
+          "decode_tokens_per_second": 39.88531140466949,
+          "peak_vram_gb": 2.9569592475891113
+        },
+        {
+          "num_generated_tokens": 75,
+          "prompt_tokens": 220,
+          "ttft_ms": 30.908500018995255,
+          "decode_latency_ms": 1811.8234000285156,
+          "total_latency_ms": 1842.9697999963537,
+          "tokens_per_second": 40.69518664936798,
+          "decode_tokens_per_second": 40.84283269486162,
+          "peak_vram_gb": 2.9569592475891113
+        },
+        {
+          "num_generated_tokens": 75,
+          "prompt_tokens": 220,
+          "ttft_ms": 31.185500032734126,
+          "decode_latency_ms": 1816.65759999305,
+          "total_latency_ms": 1848.1872000265867,
+          "tokens_per_second": 40.58030485165199,
+          "decode_tokens_per_second": 40.73414825131775,
+          "peak_vram_gb": 2.9569592475891113
+        }
+      ]
+    }
+  ],
+  "timestamp": "2026-10-27 16:54:27"
+}

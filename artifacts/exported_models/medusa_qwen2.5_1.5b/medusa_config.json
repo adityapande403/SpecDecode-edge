@@ -1,0 +1,14 @@
+{
+  "model_type": "medusa",
+  "base_model_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "num_heads": 3,
+  "num_layers": 1,
+  "hidden_size": 1536,
+  "vocab_size": 151936,
+  "torch_dtype": "bfloat16",
+  "architectures": [
+    "MedusaModel"
+  ],
+  "medusa_num_heads": 3,
+  "medusa_num_layers": 1
+}
